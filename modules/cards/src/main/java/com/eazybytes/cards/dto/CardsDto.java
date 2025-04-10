@@ -20,6 +20,7 @@ public class CardsDto {
     )
     private String mobileNumber;
 
+
     @NotEmpty(message = "Card Number can not be a null or empty")
     @Pattern(regexp="(^$|[0-9]{12})",message = "CardNumber must be 12 digits")
     @Schema(
