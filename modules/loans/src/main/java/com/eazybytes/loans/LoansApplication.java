@@ -9,9 +9,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @SpringBootApplication
 /*@ComponentScans({ @ComponentScan("com.eazybytes.loans.controller") })
 @EnableJpaRepositories("com.eazybytes.loans.repository")
@@ -40,10 +37,6 @@ import java.util.Map;
 public class LoansApplication {
 
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(LoansApplication.class);
-        Map<String, Object> props = new HashMap<>();
-        props.put("server.port", 8090);
-        app.setDefaultProperties(props);
-        app.run(args);
+        SpringApplication.run(LoansApplication.class, args);
     }
 }
