@@ -14,8 +14,7 @@ import java.time.LocalDateTime;
 )
 public class ErrorResponseDto {
 
-    @Schema(
-            description = "API path invoked by client"
+    @Schema( description = "API path invoked by client"
     )
     private  String apiPath;
 
